@@ -12,6 +12,7 @@
 
 <script>
 import CalendarView from './components/CalendarView.vue'
+import './assets/fonts.css'
 
 export default {
   name: 'App',
@@ -59,7 +60,6 @@ body {
 #app {
   min-height: 100vh; /* Make app container fill the viewport height */
   margin: 0 auto;
-  padding: 2rem;
   font-weight: normal;
   background-color: #f8d7d5; /* This should now extend the full height */
   display: flex;
@@ -86,10 +86,11 @@ body {
 }
 
 h1 {
+  font-family: 'Goodland Bold';
   text-align: center;
   color: #dd60b1;
   margin-bottom: 20px;
-  font-size: 3rem;
+  font-size: 4.5rem;
 }
 
 .falling-flowers {

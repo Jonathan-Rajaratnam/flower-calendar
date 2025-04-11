@@ -3,11 +3,9 @@
     <div class="calendar-controls">
       <button class="nav-button prev-button" @click="previousMonth">
         <span class="button-icon">❮</span>
-        <span class="button-text">Previous</span>
       </button>
       <h2>{{ monthName }} {{ currentYear }}</h2>
       <button class="nav-button next-button" @click="nextMonth">
-        <span class="button-text">Next</span>
         <span class="button-icon">❯</span>
       </button>
     </div>
@@ -48,6 +46,7 @@
 import FlowerCard from './FlowerCard.vue'
 import FlowerDetail from './FlowerDetail.vue'
 import { getFlowersForMonth } from '../flowerData.js'
+import '../assets/fonts.css'
 
 export default {
   name: 'CalendarView',
@@ -173,13 +172,14 @@ export default {
 <style scoped>
 h2 {
   text-align: center;
-  color: #dd60b1;
+  color: #f29ec8;
   margin-bottom: 20px;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 4rem;
+  font-family: 'Goodland Bold';
 }
 .calendar-container {
-  max-width: 900px;
+  max-width: 1200px;
   max-height: 100%;
   margin: 0 auto;
 }
@@ -192,11 +192,13 @@ h2 {
 }
 
 .day-header {
+  font-family: 'Goodland Bold';
+  font-size: 1.5rem;
   text-align: center;
   font-weight: bold;
   padding: 10px;
   background-color: #f0f8ff;
-  color: palevioletred;
+  color: #fc94af;
   border-radius: 5px;
 }
 

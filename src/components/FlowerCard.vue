@@ -6,27 +6,34 @@
     :style="flowerImage ? { backgroundImage: `url(${flowerImage})` } : {}"
   >
     <div class="card-content">
-      <div class="day-number" :class="{ 'special-date-number': specialDate }">{{ day }}</div>
-
+      <!-- Special date indicator at the top -->
       <div v-if="specialDate" class="special-date-indicator">
         <span :class="specialDate.type">{{ specialDate.label }}</span>
       </div>
 
+      <!-- Day number featured prominently in center -->
+      <div class="day-number-center">
+        {{ day }}
+      </div>
+
+      <!-- Flower name at bottom -->
+      <div class="flower-name-container" v-if="flowerName">
+        <div class="flower-name">{{ flowerName }}</div>
+      </div>
+
+      <!-- Default placeholder if no flower image -->
       <div v-if="!flowerImage" class="flower-placeholder">
         <span v-if="specialDate" class="special-flower-placeholder">
           {{ specialDate.type === 'anniversary' ? '💐' : '🎂' }}
         </span>
         <span v-else>🌸</span>
       </div>
-
-      <div class="flower-name-container" v-if="flowerName">
-        <div class="flower-name">{{ flowerName }}</div>
-      </div>
     </div>
   </div>
 </template>
 
 <script>
+import '../assets/fonts.css'
 export default {
   name: 'FlowerCard',
   props: {
@@ -65,7 +72,7 @@ export default {
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
-  border-radius: 5px;
+  border-radius: 8px;
   background-size: cover;
   background-position: center;
 }
@@ -87,7 +94,7 @@ export default {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(255, 255, 255, 0.7); /* Adjust opacity as needed */
+  background-color: rgba(255, 255, 255, 0.211); /* Adjust opacity as needed */
   z-index: 1;
   border-radius: inherit;
 }
@@ -99,18 +106,22 @@ export default {
   display: flex;
   flex-direction: column;
   padding: 5px;
+  justify-content: space-between; /* Distribute content evenly */
+  align-items: center;
 }
 
-.day-number {
-  align-self: flex-end;
+.day-number-center {
+  font-size: 40px;
   font-weight: bold;
-  padding: 2px 5px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.7);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin: 3px;
-  min-width: 25px;
-  text-align: center;
+  font-family: 'Goodland Bold';
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto; /* Center in available space */
 }
 
 .flower-name-container {
@@ -121,25 +132,29 @@ export default {
 }
 
 .flower-name {
-  background-color: rgba(255, 255, 255, 0.85);
-  border-radius: 4px;
-  padding: 3px 5px;
-  font-size: 12px;
+  font-size: 20px;
   font-weight: bold;
-  color: #dd60b1;
+  font-family: 'Goodland Bold';
+  color: white;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   display: inline-block;
+  margin-top: 5px;
 }
 
 .flower-placeholder {
-  flex-grow: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 24px;
+  font-size: 36px;
+  opacity: 0.3;
+  z-index: 0;
 }
 
 .special-date {
@@ -147,21 +162,16 @@ export default {
   box-shadow: 0 0 8px rgba(221, 96, 177, 0.4);
 }
 
-.special-date-number {
-  color: #dd60b1;
-  font-weight: bold;
-  background-color: rgba(255, 255, 255, 0.9);
-}
-
 .special-date-indicator {
   text-align: center;
   font-size: 12px;
   font-weight: bold;
-  padding: 2px;
+  padding: 3px 6px;
   margin-top: 5px;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.9);
   border-radius: 4px;
   align-self: center;
+  z-index: 3;
 }
 
 .anniversary {
@@ -173,7 +183,7 @@ export default {
 }
 
 .special-flower-placeholder {
-  font-size: 28px;
+  font-size: 48px;
   animation: pulse 2s infinite;
 }
 
