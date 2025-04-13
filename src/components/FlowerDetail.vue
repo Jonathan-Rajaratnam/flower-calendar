@@ -259,4 +259,53 @@ h3 {
   background-color: rgba(255, 255, 255, 0.7);
   margin-bottom: 12px;
 }
+
+@media (max-width: 768px) {
+  .flower-detail-card {
+    padding: 15px;
+    width: 95%;
+  }
+
+  .flower-title {
+    font-size: 20px;
+  }
+
+  .flower-image {
+    margin-top: 15px;
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  .close-button {
+    top: 5px;
+    right: 5px;
+    font-size: 20px;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+  .flower-detail-card {
+    padding: 10px;
+    width: 98%;
+  }
+
+  .flower-title {
+    font-size: 18px;
+  }
+
+  .flower-image {
+    margin-top: 10px;
+    max-height: 200px;
+  }
+
+  .flower-description {
+    font-size: 14px;
+  }
+}
 </style>

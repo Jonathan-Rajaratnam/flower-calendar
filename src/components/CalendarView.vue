@@ -269,12 +269,18 @@ h2 {
   margin-bottom: 15px;
 }
 
+.button-icon {
+  font-size: 1.5rem;
+  color: #f29ec8;
+}
+
 .calendar-controls button {
   padding: 8px 16px;
   background-color: #f0f8ff;
   border: 1px solid #ccc;
   border-radius: 4px;
   cursor: pointer;
+  width: 50px;
 }
 
 .calendar-controls button:hover {
@@ -296,5 +302,62 @@ h2 {
   padding: 3px;
   box-shadow: 0 0 8px rgba(133, 134, 133, 0.4);
   border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .calendar-title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+
+  .calendar-grid {
+    gap: 5px;
+  }
+
+  .day-header {
+    font-size: 1rem;
+    padding: 5px;
+  }
+
+  .calendar-day {
+    min-height: 80px;
+    min-width: auto;
+  }
+
+  .empty-day {
+    min-height: 80px;
+    min-width: auto;
+  }
+
+  .calendar-controls {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+  .calendar-title {
+    font-size: 2rem;
+  }
+
+  .day-header {
+    font-size: 0.8rem;
+    padding: 3px;
+  }
+
+  .calendar-day {
+    min-height: 60px;
+  }
+
+  .empty-day {
+    min-height: 60px;
+  }
 }
 </style>

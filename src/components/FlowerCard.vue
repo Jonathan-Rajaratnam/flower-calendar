@@ -87,6 +87,7 @@ export default {
 }
 
 /* Semi-transparent overlay to make text more readable */
+/* It makes the date and flower name more visible* */
 .has-flower::before {
   content: '';
   position: absolute;
@@ -94,7 +95,7 @@ export default {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(255, 255, 255, 0.211); /* Adjust opacity as needed */
+  background-color: rgba(255, 255, 255, 0.225);
   z-index: 1;
   border-radius: inherit;
 }
@@ -106,7 +107,7 @@ export default {
   display: flex;
   flex-direction: column;
   padding: 5px;
-  justify-content: space-between; /* Distribute content evenly */
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -115,31 +116,36 @@ export default {
   font-weight: bold;
   font-family: 'Goodland Bold';
   color: white;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
   width: 60px;
   height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: auto; /* Center in available space */
+  margin: auto;
 }
 
 .flower-name-container {
   margin-top: auto;
   text-align: center;
   width: 100%;
+  height: 55px;
   padding: 5px;
 }
 
 .flower-name {
-  font-size: 20px;
+  font-size: 19px;
   font-weight: bold;
   font-family: 'Goodland Bold';
   color: white;
-  white-space: nowrap;
+  display: -webkit-box;
+  line-clamp: 2;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  line-height: 1.1;
   overflow: hidden;
   text-overflow: ellipsis;
-  display: inline-block;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
   margin-top: 5px;
 }
 
@@ -185,6 +191,32 @@ export default {
 .special-flower-placeholder {
   font-size: 48px;
   animation: pulse 2s infinite;
+}
+
+@media (max-width: 768px) {
+  .day-number-center {
+    font-size: 2.5rem;
+    width: 40px;
+    height: 40px;
+  }
+
+  .flower-name {
+    font-size: 16px;
+    -webkit-line-clamp: 1; /* Show only 1 line on mobile */
+  }
+
+  .flower-name-container {
+    height: 40px;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+  .day-number-center {
+    font-size: 2rem;
+    width: 35px;
+    height: 35px;
+  }
 }
 
 @keyframes pulse {

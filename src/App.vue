@@ -124,4 +124,26 @@ h1 {
     opacity: 0.7;
   }
 }
+
+@media (max-width: 768px) {
+  .app-container {
+    padding: 15px 10px;
+  }
+
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-container {
+    padding: 10px 5px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+}
 </style>
