@@ -104,7 +104,6 @@ export default {
           hasFlower: false,
         })
       }
-
       //Add days of the current month
       for (let day = 1; day <= daysInMonth; day++) {
         const dateStr = `${this.currentYear}-${String(this.currentMonth + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`
@@ -127,6 +126,19 @@ export default {
           isToday: isToday,
           specialDate: specialDate,
         })
+      }
+
+      //Add empty slots for days from next months
+      const totalDays = this.days.length
+      const remainingSlots = 7 - (totalDays % 7)
+
+      if (remainingSlots < 7) {
+        for (let i = 0; i < remainingSlots; i++) {
+          this.days.push({
+            day: null,
+            hasFlower: false,
+          })
+        }
       }
     },
     showFlowerDetails(dayInfo) {
@@ -162,9 +174,18 @@ export default {
     closeFlowerDetail() {
       this.selectedFlower = null
     },
+    handleKeyDown(e) {
+      if (e.key === 'ArrowLeft') this.previousMonth()
+      if (e.key === 'ArrowRight') this.nextMonth()
+      if (e.key === 'Escape' && this.selectedFlower) this.closeFlowerDetail()
+    },
   },
   mounted() {
     this.generateCalendarDate()
+    window.addEventListener('keydown', this.handleKeyDown)
+  },
+  beforeUnmount() {
+    window.removeEventListener('keydown', this.handleKeyDown)
   },
 }
 </script>
@@ -179,7 +200,7 @@ h2 {
   font-family: 'Goodland Bold';
 }
 .calendar-container {
-  max-width: 1200px;
+  max-width: 1100px;
   max-height: 100%;
   margin: 0 auto;
 }
@@ -220,7 +241,8 @@ h2 {
 }
 
 .empty-day {
-  min-height: 100px;
+  min-height: 110px;
+  min-width: 105px;
   background-color: #f9f9f9;
   border-radius: 8px;
   border: 1px dashed #e0e0e0;

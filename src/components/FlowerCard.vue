@@ -111,7 +111,7 @@ export default {
 }
 
 .day-number-center {
-  font-size: 40px;
+  font-size: 3.5rem;
   font-weight: bold;
   font-family: 'Goodland Bold';
   color: white;
