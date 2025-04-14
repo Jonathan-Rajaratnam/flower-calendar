@@ -200,7 +200,8 @@ h2 {
   font-family: 'Goodland Bold';
 }
 .calendar-container {
-  max-width: 1100px;
+  max-width: 1200px;
+  min-width: 1200px;
   max-height: 100%;
   margin: 0 auto;
 }
@@ -306,8 +307,8 @@ h2 {
 
 @media (max-width: 768px) {
   .calendar-title {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+    font-size: 2.7rem;
+    margin-top: 10px;
   }
 
   .calendar-grid {
@@ -336,8 +337,15 @@ h2 {
     gap: 10px;
   }
 
+  .calendar-controls button {
+    width: 40px;
+    padding: 5px;
+    height: auto;
+  }
+
   h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
+    margin-bottom: 4px;
   }
 }
 
