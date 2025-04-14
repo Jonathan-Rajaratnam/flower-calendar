@@ -306,6 +306,10 @@ h2 {
 }
 
 @media (max-width: 768px) {
+  .calendar-container {
+    max-width: 100%;
+    min-width: auto;
+  }
   .calendar-title {
     font-size: 2.7rem;
     margin-top: 10px;
