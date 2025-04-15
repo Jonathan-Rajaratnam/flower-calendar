@@ -42,7 +42,7 @@
 
 <script>
 import '../assets/fonts.css'
-import '../assets/images'
+import '../assets/images/ixora.jpg'
 export default {
   name: 'FlowerCard',
   props: {
