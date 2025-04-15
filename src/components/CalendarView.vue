@@ -4,7 +4,38 @@
       <button class="nav-button prev-button" @click="previousMonth">
         <span class="button-icon">❮</span>
       </button>
-      <h2>{{ monthName }} {{ currentYear }}</h2>
+      <!-- <h2>{{ monthName }} {{ currentYear }}</h2>
+      <button class="nav-button next-button" @click="nextMonth">
+        <span class="button-icon">❯</span>
+      </button> -->
+
+      <div class="month-year-selector">
+        <div class="current-date" @click="showDatePicker = !showDatePicker">
+          <h2>{{ monthName }} {{ currentYear }}</h2>
+          <span class="dropdown-icon">▼</span>
+        </div>
+
+        <div v-if="showDatePicker" class="date-picker-dropdown">
+          <div class="year-selector">
+            <button @click="changeYear(-1)">←</button>
+            <span>{{ currentYear }}</span>
+            <button @click="changeYear(1)">→</button>
+          </div>
+
+          <div class="month-grid">
+            <div
+              v-for="(month, index) in monthNames"
+              :key="month"
+              class="month-option"
+              :class="{ selected: index === currentMonth }"
+              @click="selectMonth(index)"
+            >
+              {{ month.substring(0, 3) }}
+            </div>
+          </div>
+        </div>
+      </div>
+
       <button class="nav-button next-button" @click="nextMonth">
         <span class="button-icon">❯</span>
       </button>
@@ -31,6 +62,7 @@
           :day="day.day"
           :flowerName="day.flowerName"
           :flowerImage="day.flowerImage"
+          :specialDate="day.specialDate"
           @flower-selected="showFlowerDetails(day)"
         />
         <template v-else>
@@ -75,10 +107,12 @@ export default {
       ],
       selectedFlower: null,
       specialDates: [
-        { date: '2025-02-15', type: 'anniversary', label: 'Our Anniverary' },
-        { date: '2025-01-04', type: 'birthday', label: "Nimi's Anniverary" },
-        { date: '2025-04-01', type: 'birthday', label: "Jojo's Anniverary" },
+        // { date: '2025-02-15', type: 'anniversary', label: 'Our Anniverary' },
+        { date: '2025-01-04', type: 'birthday', label: "Nimi's Bday" },
+        { date: '2025-02-08', type: 'birthday', label: "Joe's Bday" },
       ],
+
+      showDatePicker: false,
     }
   },
   computed: {
@@ -178,6 +212,17 @@ export default {
       if (e.key === 'ArrowLeft') this.previousMonth()
       if (e.key === 'ArrowRight') this.nextMonth()
       if (e.key === 'Escape' && this.selectedFlower) this.closeFlowerDetail()
+    },
+
+    changeYear(delta) {
+      this.currentYear += delta
+      this.generateCalendarDate()
+    },
+
+    selectMonth(monthIndex) {
+      this.currentMonth = monthIndex
+      this.showDatePicker = false
+      this.generateCalendarDate()
     },
   },
   mounted() {
@@ -282,6 +327,9 @@ h2 {
   border-radius: 4px;
   cursor: pointer;
   width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .calendar-controls button:hover {
@@ -303,6 +351,76 @@ h2 {
   padding: 3px;
   box-shadow: 0 0 8px rgba(133, 134, 133, 0.4);
   border-radius: 4px;
+}
+
+.month-year-selector {
+  position: relative;
+}
+
+.current-date {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.dropdown-icon {
+  margin-left: 8px;
+  font-size: 0.8rem;
+  color: #f29ec8;
+}
+
+.date-picker-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 16px;
+  z-index: 100;
+  margin-top: 8px;
+  width: 300px;
+}
+
+.year-selector {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  color: #f29ec8;
+}
+
+.year-selector button {
+  background: #f0f8ff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+.month-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+
+.month-option {
+  text-align: center;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: #f29ec8;
+}
+
+.month-option:hover {
+  background-color: #f0f8ff;
+}
+
+.month-option.selected {
+  background-color: #f29ec8;
+  color: white;
 }
 
 @media (max-width: 768px) {
@@ -344,12 +462,22 @@ h2 {
   .calendar-controls button {
     width: 40px;
     padding: 5px;
-    height: auto;
+    height: 40px; /* Set explicit height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .button-icon {
+    font-size: 1.3rem;
+    margin-top: -4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   h2 {
     font-size: 2.5rem;
-    margin-bottom: 4px;
   }
 }
 

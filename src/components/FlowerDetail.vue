@@ -32,6 +32,8 @@
 </template>
 
 <script>
+import '../assets/fonts.css'
+
 export default {
   name: 'FlowerDetail',
   props: {
@@ -168,6 +170,7 @@ export default {
   animation: slideIn 0.3s ease;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
   transition: all 0.3s ease;
+  font-family: 'National Park';
 }
 
 @keyframes fadeIn {
@@ -214,7 +217,7 @@ export default {
   margin-top: 30px;
   width: 450px;
   height: 300px;
-  object-fit: contain;
+  object-fit: fill;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -243,7 +246,7 @@ export default {
 .flower-description {
   margin-bottom: 20px;
   line-height: 1.5;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 h3 {
@@ -253,11 +256,16 @@ h3 {
   font-weight: bold;
 }
 
+p {
+  font-size: 18px;
+}
+
 .flower-symbolism,
 .special-message {
   border-radius: 6px;
   background-color: rgba(255, 255, 255, 0.7);
   margin-bottom: 12px;
+  font-size: 16px;
 }
 
 @media (max-width: 768px) {

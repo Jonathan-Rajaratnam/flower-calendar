@@ -5,6 +5,14 @@
     :class="{ 'special-date': specialDate, 'has-flower': flowerImage }"
     :style="flowerImage ? { backgroundImage: `url(${flowerImage})` } : {}"
   >
+    <img
+      v-if="flowerImage"
+      :src="flowerImage"
+      @error="handleImageError"
+      style="display: none"
+      alt=""
+    />
+
     <div class="card-content">
       <!-- Special date indicator at the top -->
       <div v-if="specialDate" class="special-date-indicator">
@@ -34,6 +42,7 @@
 
 <script>
 import '../assets/fonts.css'
+import '../assets/images'
 export default {
   name: 'FlowerCard',
   props: {
@@ -54,7 +63,31 @@ export default {
       default: null,
     },
   },
+  data() {
+    return {
+      imageLoadFailed: false,
+      fallbackImages: [' ../assets/images/ixora.jpg'],
+    }
+  },
+  computed: {
+    displayImage() {
+      if (!this.flowerImage || this.imageLoadFailed) {
+        // If no image provided or loading failed, use fallback
+        if (this.day && this.fallbackImages.length > 0) {
+          // Use day number to select different fallback images if you have multiple
+          const index = (this.day - 1) % this.fallbackImages.length
+          return this.fallbackImages[index]
+        }
+        return '' // No fallback available
+      }
+      return this.flowerImage
+    },
+  },
   methods: {
+    handleImageError() {
+      console.log(`Failed to load image: ${this.flowerImage}`)
+      this.imageLoadFailed = true
+    },
     showDetails() {
       this.$emit('flower-selected')
     },
@@ -96,6 +129,8 @@ export default {
   right: 0;
   bottom: 0;
   background-color: rgba(255, 255, 255, 0.225);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(2px);
   z-index: 1;
   border-radius: inherit;
 }
@@ -113,7 +148,6 @@ export default {
 
 .day-number-center {
   font-size: 3.5rem;
-  font-weight: bold;
   font-family: 'Goodland Bold';
   color: white;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);

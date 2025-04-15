@@ -5,3 +5,11 @@
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: 'National Park';
+  src: url('./fonts/NationalPark-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
