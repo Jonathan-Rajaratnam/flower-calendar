@@ -757,7 +757,7 @@ export const flowerLibrary = [
     id: 77,
     name: 'Ixora',
     image:
-      'https://images.unsplash.com/photo-1711993138989-888de940b1f3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1569101315919-dafea4df33ff?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
     description:
       'Ixora features dense clusters of small, tubular flowers in vibrant shades of red, orange, yellow, or pink.',
     symbolism: 'Symbolizes brilliance, passion, and enduring affection.',
@@ -1333,331 +1333,711 @@ export const flowerLibrary = [
     symbolism: 'Symbolizes consumed by love, perfection, and divine beauty.',
     message: 'New beauty emerges with each passing day.',
   },
+  {
+    id: 138,
+    name: 'Aconitum',
+    image:
+      'https://images.unsplash.com/photo-1723543806704-a22fb3f09b9b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    description:
+      'Aconitum, also known as Monkshood, features hooded deep blue-purple flowers on tall spikes with deeply divided foliage.',
+    symbolism: 'Symbolizes caution, danger overcome, and chivalry.',
+    message: 'Sometimes the most beautiful things require careful handling.',
+  },
+  {
+    id: 141,
+    name: 'Bergenia',
+    image:
+      'https://images.unsplash.com/photo-1743785632202-a77db76747ea?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    description:
+      'Bergenia features clusters of pink to purple bell-shaped flowers above large, glossy, leathery leaves that turn reddish in winter.',
+    symbolism: 'Symbolizes persistence, endurance, and healing.',
+    message: "Strength often comes from weathering life's seasons.",
+  },
+  {
+    id: 142,
+    name: 'Bouvardia',
+    image:
+      'https://floralife.com/wp-content/uploads/2023/01/Bouvardia_2560X1790.png?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    description:
+      'Bouvardia produces clusters of tubular, star-shaped flowers in white, pink, or red with glossy green foliage.',
+    symbolism: 'Symbolizes enthusiasm, zest for life, and excitement.',
+    message: 'Approach each day with renewed enthusiasm and joy.',
+  },
+  {
+    id: 144,
+    name: 'Ceanothus',
+    image:
+      'https://images.unsplash.com/photo-1655175272174-ae1df9051c0e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    description:
+      'Ceanothus, or California Lilac, has dense clusters of tiny, powder-blue to deep blue flowers covering the shrub in spring.',
+    symbolism: 'Symbolizes belonging, community, and gentle strength.',
+    message: 'Together we create something greater than ourselves alone.',
+  },
+  {
+    id: 146,
+    name: 'Corydalis',
+    image:
+      'https://c02.purpledshub.com/uploads/sites/40/2021/03/RBD170420_38-fa8402b.jpg?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    description:
+      'Corydalis features delicate tubular flowers in soft blue, purple, pink, or yellow above fern-like, blue-green foliage.',
+    symbolism: 'Symbolizes hidden worth, quiet strength, and recovery.',
+    message: 'True value often lies beneath what is immediately visible.',
+  },
+  {
+    id: 147,
+    name: 'Eccremocarpus',
+    image:
+      'https://jurassicplants.co.uk/cdn/shop/products/IMG_20220620_111325_1000x.jpg?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    description:
+      'Eccremocarpus, or Chilean Glory Flower, has clusters of tubular orange or red flowers on climbing vines with divided leaves.',
+    symbolism: 'Symbolizes aspiration, ambition, and reaching higher.',
+    message: 'Set your sights high and your spirit will follow.',
+  },
+  {
+    id: 148,
+    name: 'Eranthis',
+    image:
+      'https://images.unsplash.com/photo-1708896129547-837c7c41e775?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    description:
+      'Eranthis, or Winter Aconite, produces bright yellow, cup-shaped flowers surrounded by collar-like green bracts in late winter.',
+    symbolism: 'Symbolizes persistence, hope during darkness, and new beginnings.',
+    message: 'Even in the coldest times, hope can bloom.',
+  },
+  {
+    id: 149,
+    name: 'Eryngium',
+    image:
+      'https://cdn.mos.cms.futurecdn.net/wCVnyLwgu6GY92sPeZKzWX-1920-80.jpg.webp?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    description:
+      'Eryngium, or Sea Holly, features spiny, metallic blue flower heads with silvery-blue bracts on stems with thistle-like foliage.',
+    symbolism: 'Symbolizes independence, strength of character, and attraction.',
+    message: 'True strength comes from staying true to your unique nature.',
+  },
+  {
+    id: 150,
+    name: 'Erysimum',
+    image:
+      'https://www.creekhillnursery.com/images/cache/catalog/plants/ERY/ERY%20Erysistible%20Tricolor-1-1800x1200.jpg?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    description:
+      'Erysimum, or Wallflower, produces fragrant clusters of four-petaled flowers in gold, orange, red, or purple on upright stems.',
+    symbolism: 'Symbolizes faithfulness in adversity, lasting beauty, and constancy.',
+    message: 'Faithfulness through difficulty reveals true character.',
+  },
+  {
+    id: 151,
+    name: 'Escallonia',
+    image:
+      'https://www.rhs.org.uk/getmedia/dec5fe12-9dc2-4c33-884b-51f481aad221/Escallonia-Desktop-Hero-PUB0010596.jpg?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    description:
+      'Escallonia features clusters of small tubular or star-shaped pink, red, or white flowers on glossy-leaved evergreen shrubs.',
+    symbolism: 'Symbolizes protection, shelter, and steadfast devotion.',
+    message: 'May you always find shelter in those who truly care.',
+  },
+  {
+    id: 152,
+    name: 'Geum',
+    image:
+      'https://images.unsplash.com/photo-1593794482880-e2cf6f9fec5c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    description:
+      'Geum produces semi-double flowers in vibrant oranges, reds, and yellows on wiry stems above rosettes of scalloped leaves.',
+    symbolism: 'Symbolizes cheerfulness, loyal love, and vivacity.',
+    message: 'A cheerful heart brings light to the darkest days.',
+  },
+  {
+    id: 153,
+    name: 'Helenium',
+    image:
+      'https://cdn.mos.cms.futurecdn.net/tK9nQ5EeSPETsTsax2ZLiL-1200-80.jpg?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    description:
+      'Helenium, or Sneezeweed, has daisy-like flowers with distinctive raised centers in warm tones of yellow, orange, and russet red.',
+    symbolism: 'Symbolizes tears, remembrance, and bittersweet memories.',
+    message: 'Even in tears, there is a beauty that connects us to what matters.',
+  },
+  {
+    id: 154,
+    name: 'Helichrysum',
+    image:
+      'https://images.unsplash.com/photo-1710842592275-6245497f3d47?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    description:
+      'Helichrysum, or Strawflower, features papery, everlasting blooms in bright yellows, oranges, reds, and pinks on silvery stems.',
+    symbolism: 'Symbolizes immortality, everlasting memory, and undying affection.',
+    message: 'True love remains vibrant even as time passes.',
+  },
+  {
+    id: 155,
+    name: 'Heliotrope',
+    image:
+      'https://images.unsplash.com/photo-1630872767113-265100e6850b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    description:
+      'Heliotrope produces clusters of tiny, vanilla-scented purple or white flowers on velvety green foliage.',
+    symbolism: 'Symbolizes eternal love, devotion, and "I am devoted to you."',
+    message: 'Devotion is the fragrance that lingers when love blooms.',
+  },
+  {
+    id: 156,
+    name: 'Hesperis',
+    image:
+      'https://images.immediate.co.uk/production/volatile/sites/10/2018/09/49c09206-f115-4d0b-80f1-4607e57bc396-755199e.jpg?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    description:
+      'Hesperis, or Sweet Rocket, features fragrant clusters of four-petaled flowers in white, pink, or purple that release their scent in the evening.',
+    symbolism: 'Symbolizes evening contemplation, sweet memories, and contentment.',
+    message: "Some of life's sweetest moments come in quiet reflection.",
+  },
+  {
+    id: 157,
+    name: 'Globe Amaranth',
+    image:
+      'https://images.unsplash.com/photo-1638305169729-1a4398872353?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    description:
+      'Globe amaranth has clover-like, papery flower heads in purple, pink, white, or red that last for weeks.',
+    symbolism: 'Symbolizes immortality, unfading love, and honesty.',
+    message: 'True love remains vibrant through all seasons.',
+  },
+  {
+    id: 158,
+    name: 'Lavatera',
+    image:
+      'https://images.unsplash.com/photo-1695734047842-49a29808a4f6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    description:
+      'Lavatera, or Tree Mallow, has large, hibiscus-like five-petaled flowers in pink, white, or rose above maple-like foliage.',
+    symbolism: 'Symbolizes sweet disposition, gentle heart, and kindness.',
+    message: 'Kindness blooms more beautifully than any flower.',
+  },
+  {
+    id: 159,
+    name: 'Leptospermum',
+    image:
+      'https://www.gardenia.net/wp-content/uploads/2023/05/Leptospermum-scoparium.webp?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    description:
+      'Leptospermum, or Tea Tree, produces small, five-petaled white or pink flowers that cover the branches of this aromatic shrub.',
+    symbolism: 'Symbolizes healing, purification, and renewed vitality.',
+    message: 'Healing begins with opening to new possibilities.',
+  },
+  {
+    id: 160,
+    name: 'Leucojum',
+    image:
+      'https://images.unsplash.com/photo-1675984490882-191849b688c6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    description:
+      'Leucojum, or Snowflake, has nodding, bell-shaped white flowers with distinctive green tips on each petal.',
+    symbolism: 'Symbolizes hope, promise, and purity of intention.',
+    message: 'Hope arrives even when the landscape seems bare.',
+  },
+  {
+    id: 161,
+    name: 'Linaria',
+    image:
+      'https://images.unsplash.com/photo-1719394215919-f9c98d1b4e4c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    description:
+      'Linaria, or Toadflax, features snapdragon-like flowers in purple, yellow, or bicolors on slender stems with narrow leaves.',
+    symbolism: 'Symbolizes playfulness, whimsy, and "please notice my love."',
+    message: "Joy is found in life's playful, unexpected moments.",
+  },
+  {
+    id: 162,
+    name: 'Meconopsis',
+    image:
+      'https://images.unsplash.com/photo-1691614873927-7c58fbe08725?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    description:
+      'Meconopsis, or Himalayan Blue Poppy, produces ethereal, silky flowers in an extraordinary sky-blue color with golden centers.',
+    symbolism: 'Symbolizes aspiration, rarity, and extraordinary beauty.',
+    message: 'Some dreams, though rare and difficult, are worth pursuing.',
+  },
+  {
+    id: 164,
+    name: 'Nierembergia',
+    image:
+      'https://all-americaselections.org/wp-content/uploads/2016/10/Nierembergia_MontBlanc-1993.jpg?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    description:
+      'Nierembergia, or Cup Flower, produces an abundance of small, cup-shaped lavender-blue or white flowers above fine foliage.',
+    symbolism: 'Symbolizes contentment, serenity, and peaceful connection.',
+    message: 'Contentment comes from appreciating what is already yours.',
+  },
+  {
+    id: 165,
+    name: 'Oenothera',
+    image:
+      'https://images.unsplash.com/photo-1717530395923-eb30c80a78d0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    description:
+      'Oenothera, or Evening Primrose, has delicate four-petaled yellow flowers that open at dusk, often in just a few minutes.',
+    symbolism: 'Symbolizes inconstancy, fleeting beauty, and silent longing.',
+    message: 'Some moments of beauty are meant to be brief but unforgettable.',
+  },
+  {
+    id: 166,
+    name: 'Pentas',
+    image:
+      'https://images.unsplash.com/photo-1626245806029-05016d976900?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    description:
+      'Pentas features clusters of five-pointed, star-shaped flowers in red, pink, white, or lavender that attract butterflies.',
+    symbolism: 'Symbolizes attraction, fascination, and magnetic personality.',
+    message: 'Your unique light attracts those who appreciate your true nature.',
+  },
+  {
+    id: 167,
+    name: 'Physostegia',
+    image:
+      'https://www.gardenia.net/wp-content/uploads/2023/05/physostegia-virginiana-crown-of-snow.webp?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    description:
+      'Physostegia, or Obedient Plant, has spikes of snapdragon-like pink or white flowers that can be positioned and will stay in place.',
+    symbolism: 'Symbolizes flexibility, adaptability, and willingness to change.',
+    message: 'Strength can be found in knowing when to bend.',
+  },
+  {
+    id: 169,
+    name: 'Rhodanthe',
+    image:
+      'https://www.nature-and-garden.com/wp-content/uploads/sites/4/2022/11/rhodanthe-helipterum-roseum.jpg?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    description:
+      'Rhodanthe, or Swan River Everlasting, features papery, daisy-like flowers in pink, white, or red with yellow centers.',
+    symbolism: 'Symbolizes remembrance, enduring memories, and immortality.',
+    message: 'Some memories remain eternally beautiful.',
+  },
+  {
+    id: 170,
+    name: 'Salpiglossis',
+    image:
+      'https://highdesertseed.com/wp-content/uploads/2022/12/IMG_0881-scaled-e1671731533206.jpeg?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    description:
+      'Salpiglossis, or Painted Tongue, has trumpet-shaped flowers with intricate veining in rich, velvety jewel tones.',
+    symbolism: 'Symbolizes eloquence, mystery, and imaginative spirit.',
+    message: 'Your unique voice holds a power all its own.',
+  },
+  {
+    id: 171,
+    name: 'Sanvitalia',
+    image:
+      'https://images.unsplash.com/photo-1708413206392-9178aaa14ebb?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    description:
+      'Sanvitalia, or Creeping Zinnia, produces small, sunflower-like yellow blooms with dark centers on trailing stems.',
+    symbolism: 'Symbolizes perseverance, cheerfulness, and adaptability.',
+    message: 'Even in small spaces, joy can spread and flourish.',
+  },
+  {
+    id: 173,
+    name: 'Schizanthus',
+    image:
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1a2LVd8TzKG9crli3NHN0x3HmH0gkoSUdJA&s?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    description:
+      'Schizanthus, or Butterfly Flower, has delicate, orchid-like flowers in pink, purple, white, or bicolors with intricate markings.',
+    symbolism: 'Symbolizes elegance, grace, and delicate beauty.',
+    message: 'True elegance comes from embracing your delicate nature.',
+  },
+  // {
+  //   id: 174,
+  //   name: 'Thalictrum',
+  //   image:
+  //     'https://images.unsplash.com/photo-1599037744290-c8512be385c5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+  //   description:
+  //     'Thalictrum, or Meadow Rue, produces clouds of tiny, fluffy flowers in purple, white, or yellow above delicate, fern-like foliage.',
+  //   symbolism: 'Symbolizes wisdom through experience, elegance, and tranquility.',
+  //   message: "Wisdom grows from witnessing life's changing seasons.",
+  // },
+  // {
+  //   id: 175,
+  //   name: 'Thunbergia',
+  //   image:
+  //     'https://images.unsplash.com/photo-1591369372193-8a4706b9e3a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+  //   description:
+  //     'Thunbergia, or Black-eyed Susan Vine, has tubular flowers with five overlapping petals in yellow, orange, or white with dark centers.',
+  //   symbolism: 'Symbolizes barriers overcome, achievement, and bright prospects.',
+  //   message: 'With determination, obstacles become stepping stones.',
+  // },
+  // {
+  //   id: 176,
+  //   name: 'Tiarella',
+  //   image:
+  //     'https://images.unsplash.com/photo-1599037764078-308b2f25f9a9?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+  //   description:
+  //     'Tiarella, or Foamflower, features airy, star-shaped white or pale pink flowers in feathery spikes above maple-like foliage.',
+  //   symbolism: 'Symbolizes delicacy, understated beauty, and quiet confidence.',
+  //   message: 'True beauty often speaks in whispers rather than shouts.',
+  // },
+  // {
+  //   id: 177,
+  //   name: 'Trachelium',
+  //   image:
+  //     'https://images.unsplash.com/photo-1599037744065-27df968abbf0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+  //   description:
+  //     'Trachelium produces large clusters of tiny, starry flowers in purple, white, or blue that form rounded heads.',
+  //   symbolism: 'Symbolizes neglected beauty, constancy, and "I see your worth."',
+  //   message: 'Sometimes the most overlooked beauty holds the greatest value.',
+  // },
+  // {
+  //   id: 178,
+  //   name: 'Trollius',
+  //   image:
+  //     'https://images.unsplash.com/photo-1599037744121-3f08658a136d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+  //   description:
+  //     'Trollius, or Globeflower, has globe-shaped, buttercup-like yellow or orange flowers above deeply divided foliage.',
+  //   symbolism: "Symbolizes dedication, loyalty, and I'll be faithful.",
+  //   message: "Dedication to what matters brings life's deepest satisfactions.",
+  // },
+  // {
+  //   id: 179,
+  //   name: 'Tropaeolum',
+  //   image:
+  //     'https://images.unsplash.com/photo-1593542456513-6bc5be08fcaa?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+  //   description:
+  //     'Tropaeolum, or Canary Creeper, features fringed, bright yellow flowers resembling tiny birds in flight on climbing vines.',
+  //   symbolism: 'Symbolizes freedom, joy, and soaring aspirations.',
+  //   message: 'A free spirit brings light wherever it goes.',
+  // },
+  // {
+  //   id: 180,
+  //   name: 'Venidium',
+  //   image:
+  //     'https://images.unsplash.com/photo-1597848428018-7281e7a27b77?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+  //   description:
+  //     'Venidium, or Monarch of the Veldt, produces large, showy daisy-like orange or yellow flowers with dark centers on silvery stems.',
+  //   symbolism: 'Symbolizes nobility, resilience, and "I shine in adversity."',
+  //   message: 'True nobility reveals itself in how we face challenges.',
+  // },
+  // {
+  //   id: 181,
+  //   name: 'Verbascum',
+  //   image:
+  //     'https://images.unsplash.com/photo-1596461212140-51f28a7c0f6f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+  //   description:
+  //     'Verbascum, or Mullein, features tall spires of five-petaled yellow, white, or purple flowers rising above woolly, silver foliage.',
+  //   symbolism: 'Symbolizes courage, protection, and "stand tall in adversity."',
+  //   message: 'Courage means standing firm even when standing alone.',
+  // },
+  // {
+  //   id: 182,
+  //   name: 'Weigela',
+  //   image:
+  //     'https://images.unsplash.com/photo-1591368732357-fb13405ff672?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+  //   description:
+  //     'Weigela produces abundant funnel-shaped pink, red, or white flowers that attract hummingbirds and butterflies.',
+  //   symbolism: 'Symbolizes welcoming heart, hospitality, and generosity.',
+  //   message: "A generous heart attracts life's most precious visitors.",
+  // },
 ]
 
-// export const sampleFlowers = [
-//   {
-//     id: 1,
-//     date: '2025-04-01',
-//     name: 'Cherry Blossom',
-//     image:
-//       'https://images.unsplash.com/photo-1551272744-19456affaa89?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-//     description:
-//       'Cherry blossoms are the flowers of several trees of genus Prunus, particularly the Japanese cherry, Prunus serrulata.',
-//     symbolism: 'Symbolizes the fragility and beauty of life. Associated with renewal and spring.',
-//     message: 'Life is short but beautiful. Cherish each moment.',
-//   },
-//   {
-//     id: 2,
-//     date: '2025-04-02',
-//     name: 'Sunflower',
-//     image:
-//       'https://images.unsplash.com/photo-1455659817273-f96807779a8a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-//     description:
-//       'Sunflowers are known for their tall stems and bright yellow blooms that resemble the sun.',
-//     symbolism: 'Symbolizes adoration, loyalty and longevity.',
-//     message: 'Always turn your face to the sunshine.',
-//   },
-//   {
-//     id: 3,
-//     date: '2025-04-03',
-//     name: 'Lavender',
-//     image:
-//       'https://images.unsplash.com/photo-1477511801984-4ad318ed9846?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-//     description:
-//       'Lavender is a flowering plant in the mint family known for its beauty and sweet floral fragrance.',
-//     symbolism: 'Symbolizes purity, silence, devotion, serenity, grace, and calmness.',
-//     message: 'Find peace in the little moments.',
-//   },
-//   {
-//     id: 5,
-//     date: '2025-04-04',
-//     name: 'Tulip',
-//     image:
-//       'https://images.unsplash.com/photo-1488928741225-2aaf732c96cc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-//     description:
-//       'Tulips are spring-blooming perennials with bold, cup-shaped flowers on stems that can grow up to 24 inches tall.',
-//     symbolism: 'Symbolizes perfect love, fame, and passion.',
-//     message: 'Declare your love boldly and with confidence.',
-//   },
-//   {
-//     id: 6,
-//     date: '2025-04-05',
-//     name: 'Daffodil',
-//     image:
-//       'https://images.unsplash.com/photo-1580551844010-58a0a669be6e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-//     description:
-//       'Daffodils are spring flowers with a trumpet-shaped corona surrounded by six petals, typically yellow or white.',
-//     symbolism: 'Symbolizes rebirth, new beginnings, and eternal life.',
-//     message: 'Every end is a new beginning.',
-//   },
-//   {
-//     id: 7,
-//     date: '2025-04-06',
-//     name: 'Lily',
-//     image:
-//       'https://images.unsplash.com/photo-1561897519-6e4fbd1fbc41?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-//     description:
-//       'Lilies are tall perennials with prominent flowers, often fragrant and come in a range of colors.',
-//     symbolism: 'Symbolizes purity, innocence, rebirth, and fertility.',
-//     message: 'Purity of heart leads to purity of purpose.',
-//   },
-//   {
-//     id: 8,
-//     date: '2025-04-07',
-//     name: 'Rose',
-//     image:
-//       'https://images.unsplash.com/photo-1559563362-c667ba5f5480?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-//     description:
-//       'Roses are woody perennial flowering plants known for their beautiful, often fragrant blooms and prickly stems.',
-//     symbolism: 'Symbolizes love, passion, and beauty.',
-//     message: 'True love never fades with time.',
-//   },
-//   {
-//     id: 9,
-//     date: '2025-04-08',
-//     name: 'Daisy',
-//     image:
-//       'https://images.unsplash.com/photo-1560717789-0ac7c58ac90a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-//     description:
-//       'Daisies are simple yet charming flowers with white petals surrounding a yellow center.',
-//     symbolism: 'Symbolizes innocence, purity, and new beginnings.',
-//     message: 'Simplicity has its own elegance.',
-//   },
-//   {
-//     id: 10,
-//     date: '2025-04-09',
-//     name: 'Orchid',
-//     image:
-//       'https://images.unsplash.com/photo-1624819107184-0c4fe02da00c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-//     description: 'Orchids are exotic-looking flowers with complex shapes and vibrant colors.',
-//     symbolism: 'Symbolizes luxury, beauty, strength, and love.',
-//     message: 'Rare beauty deserves cherishing.',
-//   },
-//   {
-//     id: 11,
-//     date: '2025-04-10',
-//     name: 'Peony',
-//     image:
-//       'https://images.unsplash.com/photo-1563730031910-60f14687e33a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-//     description: 'Peonies are known for their large, full blooms and lush foliage.',
-//     symbolism: 'Symbolizes prosperity, good fortune, and compassion.',
-//     message: 'Fortune favors those with open hearts.',
-//   },
-//   {
-//     id: 12,
-//     date: '2025-04-11',
-//     name: 'Hydrangea',
-//     image:
-//       'https://images.unsplash.com/photo-1549100789-756142409c2e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-//     description: 'Hydrangeas produce large clusters of flowers in blue, pink, white, or purple.',
-//     symbolism: 'Symbolizes gratitude, grace, and heartfelt emotions.',
-//     message: 'Express gratitude for the abundance in your life.',
-//   },
-//   {
-//     id: 13,
-//     date: '2025-04-12',
-//     name: 'Iris',
-//     image:
-//       'https://images.unsplash.com/photo-1590377663350-cfc38d4b6e43?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-//     description:
-//       'Irises are distinctive with their unique three-part flowers and sword-like leaves.',
-//     symbolism: 'Symbolizes faith, wisdom, hope, and valor.',
-//     message: 'Wisdom comes to those who seek it with an open mind.',
-//   },
-//   {
-//     id: 14,
-//     date: '2025-04-13',
-//     name: 'Carnation',
-//     image:
-//       'https://images.unsplash.com/photo-1582794543462-0d7922e50cf5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-//     description:
-//       'Carnations have ruffled petals with a spicy-sweet fragrance and come in many colors.',
-//     symbolism: 'Symbolizes love, fascination, and distinction.',
-//     message: 'Love endures through all seasons.',
-//   },
-//   {
-//     id: 15,
-//     date: '2025-04-14',
-//     name: 'Dahlia',
-//     image:
-//       'https://images.unsplash.com/photo-1620062317671-ef6441546d7d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-//     description:
-//       'Dahlias are known for their geometric, perfectly symmetrical blooms in vibrant colors.',
-//     symbolism: 'Symbolizes elegance, inner strength, and dignity.',
-//     message: 'Find strength in your uniqueness.',
-//   },
-//   {
-//     id: 16,
-//     date: '2025-04-15',
-//     name: 'Chrysanthemum',
-//     image:
-//       'https://images.unsplash.com/photo-1624373400586-b7f27ea22aad?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-//     description:
-//       'Chrysanthemums feature daisy-like flowers with tightly clustered petals in various forms.',
-//     symbolism: 'Symbolizes longevity, joy, and optimism.',
-//     message: 'Find joy in the everyday moments.',
-//   },
-//   {
-//     id: 17,
-//     date: '2025-04-16',
-//     name: 'Poppy',
-//     image:
-//       'https://images.unsplash.com/photo-1498814117408-e396f5507073?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-//     description: 'Poppies have delicate, paper-like petals in vibrant colors, especially red.',
-//     symbolism: 'Symbolizes remembrance, peace, and consolation.',
-//     message: 'Honor the past while embracing the future.',
-//   },
-//   {
-//     id: 18,
-//     date: '2025-04-17',
-//     name: 'Marigold',
-//     image:
-//       'https://images.unsplash.com/photo-1606432144664-594a97fea6e2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-//     description: 'Marigolds have dense, ruffled flower heads in golden, orange, and yellow hues.',
-//     symbolism: 'Symbolizes passion, creativity, and the warmth of the rising sun.',
-//     message: 'Let your creativity shine brightly.',
-//   },
-//   {
-//     id: 19,
-//     date: '2025-04-18',
-//     name: 'Bluebell',
-//     image:
-//       'https://images.unsplash.com/photo-1526038260759-e8de67460222?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-//     description:
-//       'Bluebells are woodland flowers with delicate, bell-shaped blooms in blue or purple.',
-//     symbolism: 'Symbolizes humility, gratitude, and everlasting love.',
-//     message: 'Humility is the foundation of all virtues.',
-//   },
-//   {
-//     id: 20,
-//     date: '2025-04-19',
-//     name: 'Forget-me-not',
-//     image:
-//       'https://images.unsplash.com/photo-1581956190574-c082e720b3fc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-//     description:
-//       'Forget-me-nots are small flowers with five blue petals surrounding a yellow center.',
-//     symbolism: 'Symbolizes remembrance, true love, and fidelity.',
-//     message: 'True connections leave lasting impressions.',
-//   },
-//   {
-//     id: 21,
-//     date: '2025-04-20',
-//     name: 'Snapdragon',
-//     image:
-//       'https://images.unsplash.com/photo-1690899200948-36dba0df9c87?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-//     description: "Snapdragons have unique flowers that resemble a dragon's mouth when squeezed.",
-//     symbolism: 'Symbolizes grace, strength, and deception.',
-//     message: 'Strength comes in many forms, including resilience.',
-//   },
-//   {
-//     id: 22,
-//     date: '2025-04-21',
-//     name: 'Foxglove',
-//     image:
-//       'https://images.unsplash.com/photo-1529330748241-4095ac8a2fd0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-//     description: 'Foxgloves have tall spires of tubular flowers in pink, purple, white, or yellow.',
-//     symbolism: 'Symbolizes insincerity but also creativity and productivity.',
-//     message: 'Beauty can conceal complexity.',
-//   },
-//   {
-//     id: 23,
-//     date: '2025-04-22',
-//     name: 'Lotus',
-//     image:
-//       'https://images.unsplash.com/photo-1616435577207-ca90abc6b732?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-//     description:
-//       'Lotus flowers rise from the mud to bloom above water, with delicate petals unfolding.',
-//     symbolism: 'Symbolizes purity, enlightenment, self-regeneration, and rebirth.',
-//     message: 'From difficult circumstances, beauty can emerge.',
-//   },
-//   {
-//     id: 24,
-//     date: '2025-04-23',
-//     name: 'Anemone',
-//     image:
-//       'https://images.unsplash.com/photo-1615671524971-4fac0891f7d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-//     description:
-//       'Anemones have delicate, poppy-like blooms with a dark center and come in various colors.',
-//     symbolism: 'Symbolizes anticipation, protection against evil, and fortune.',
-//     message: 'Anticipation makes the heart grow fonder.',
-//   },
-//   {
-//     id: 25,
-//     date: '2025-04-24',
-//     name: 'Camellia',
-//     image:
-//       'https://images.unsplash.com/photo-1519038635910-b3d93ae0d0ca?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-//     description:
-//       'Camellias have glossy leaves and large, symmetrical blooms in red, pink, and white.',
-//     symbolism: 'Symbolizes admiration, perfection, and gratitude.',
-//     message: 'Perfect love needs no words.',
-//   },
-//   {
-//     id: 26,
-//     date: '2025-04-25',
-//     name: 'Magnolia',
-//     image:
-//       'https://images.unsplash.com/photo-1617708407463-8460ff1fb4e2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-//     description:
-//       'Magnolias have large, fragrant flowers with thick, waxy petals in white, pink, or purple.',
-//     symbolism: 'Symbolizes nobility, perseverance, and dignity.',
-//     message: 'Dignity comes from staying true to your nature.',
-//   },
-//   {
-//     id: 27,
-//     date: '2025-04-26',
-//     name: 'Azalea',
-//     image:
-//       'https://images.unsplash.com/photo-1624282454118-7cfe8d23457e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-//     description: 'Azaleas produce masses of colorful funnel-shaped blooms, often in bright shades.',
-//     symbolism: 'Symbolizes temperance, passion, and taking care of yourself.',
-//     message: 'Self-care is not selfishness but self-preservation.',
-//   },
-//   {
-//     id: 28,
-//     date: '2025-04-27',
-//     name: 'Pansy',
-//     image:
-//       'https://images.unsplash.com/photo-1588792405774-05bf3989a3b9?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-//     description: 'Pansies have heart-shaped, overlapping petals with distinctive "face" markings.',
-//     symbolism: 'Symbolizes loving thoughts, remembrance, and free-thinking.',
-//     message: 'Keep those you love in your thoughts.',
-//   },
-//   {
-//     id: 29,
-//     date: '2025-04-28',
-//     name: 'Aster',
-//     image:
-//       'https://images.unsplash.com/photo-1572376369298-d8e09732438b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-//     description:
-//       'Asters have daisy-like flowers with slender petals radiating from a central disk.',
-//     symbolism: 'Symbolizes patience, daintiness, and elegance.',
-//     message: 'Patience is not the ability to wait, but how you act while waiting.',
-//   },
-//   {
-//     id: 30,
-//     date: '2025-04-29',
-//     name: 'Sweet Pea',
-//     image:
-//       'https://images.unsplash.com/photo-1626159092479-5b12772e2e9d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-//     description: 'Sweet peas have delicate, ruffled blooms with a wonderful fragrance.',
-//     symbolism: 'Symbolizes blissful pleasure, departure, and gratitude.',
-//     message: 'Find pleasure in simple joys.',
-//   },
-//   {
-//     id: 31,
-//     date: '2025-04-30',
-//     name: 'Gladiolus',
-//     image:
-//       'https://images.unsplash.com/photo-1688842832393-62bb403df6a5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-//     description: 'Gladioli have tall spikes of funnel-shaped blooms in a wide range of colors.',
-//     symbolism: 'Symbolizes strength of character, honor, and remembrance.',
-//     message: 'Strength is not just physical but also of character and will.',
-//   },
-//   // Add more flowers as needed
-// ]
-export const sampleFlowers = []
+export const sampleFlowers = [
+  {
+    id: 1,
+    date: '2025-04-01',
+    name: 'Cherry Blossom',
+    image:
+      'https://images.unsplash.com/photo-1551272744-19456affaa89?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    description:
+      'Cherry blossoms are the flowers of several trees of genus Prunus, particularly the Japanese cherry, Prunus serrulata.',
+    symbolism: 'Symbolizes the fragility and beauty of life. Associated with renewal and spring.',
+    message: 'Life is short but beautiful. Cherish each moment.',
+  },
+  {
+    id: 2,
+    date: '2025-04-02',
+    name: 'Sunflower',
+    image:
+      'https://images.unsplash.com/photo-1455659817273-f96807779a8a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    description:
+      'Sunflowers are known for their tall stems and bright yellow blooms that resemble the sun.',
+    symbolism: 'Symbolizes adoration, loyalty and longevity.',
+    message: 'Always turn your face to the sunshine.',
+  },
+  {
+    id: 3,
+    date: '2025-04-03',
+    name: 'Lavender',
+    image:
+      'https://images.unsplash.com/photo-1477511801984-4ad318ed9846?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    description:
+      'Lavender is a flowering plant in the mint family known for its beauty and sweet floral fragrance.',
+    symbolism: 'Symbolizes purity, silence, devotion, serenity, grace, and calmness.',
+    message: 'Find peace in the little moments.',
+  },
+  {
+    id: 5,
+    date: '2025-04-04',
+    name: 'Tulip',
+    image:
+      'https://images.unsplash.com/photo-1488928741225-2aaf732c96cc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    description:
+      'Tulips are spring-blooming perennials with bold, cup-shaped flowers on stems that can grow up to 24 inches tall.',
+    symbolism: 'Symbolizes perfect love, fame, and passion.',
+    message: 'Declare your love boldly and with confidence.',
+  },
+  {
+    id: 6,
+    date: '2025-04-05',
+    name: 'Daffodil',
+    image:
+      'https://images.unsplash.com/photo-1580551844010-58a0a669be6e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    description:
+      'Daffodils are spring flowers with a trumpet-shaped corona surrounded by six petals, typically yellow or white.',
+    symbolism: 'Symbolizes rebirth, new beginnings, and eternal life.',
+    message: 'Every end is a new beginning.',
+  },
+  {
+    id: 7,
+    date: '2025-04-06',
+    name: 'Lily',
+    image:
+      'https://images.unsplash.com/photo-1561897519-6e4fbd1fbc41?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    description:
+      'Lilies are tall perennials with prominent flowers, often fragrant and come in a range of colors.',
+    symbolism: 'Symbolizes purity, innocence, rebirth, and fertility.',
+    message: 'Purity of heart leads to purity of purpose.',
+  },
+  {
+    id: 8,
+    date: '2025-04-07',
+    name: 'Rose',
+    image:
+      'https://images.unsplash.com/photo-1559563362-c667ba5f5480?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    description:
+      'Roses are woody perennial flowering plants known for their beautiful, often fragrant blooms and prickly stems.',
+    symbolism: 'Symbolizes love, passion, and beauty.',
+    message: 'True love never fades with time.',
+  },
+  {
+    id: 9,
+    date: '2025-04-08',
+    name: 'Daisy',
+    image:
+      'https://images.unsplash.com/photo-1560717789-0ac7c58ac90a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    description:
+      'Daisies are simple yet charming flowers with white petals surrounding a yellow center.',
+    symbolism: 'Symbolizes innocence, purity, and new beginnings.',
+    message: 'Simplicity has its own elegance.',
+  },
+  {
+    id: 10,
+    date: '2025-04-09',
+    name: 'Orchid',
+    image:
+      'https://images.unsplash.com/photo-1624819107184-0c4fe02da00c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    description: 'Orchids are exotic-looking flowers with complex shapes and vibrant colors.',
+    symbolism: 'Symbolizes luxury, beauty, strength, and love.',
+    message: 'Rare beauty deserves cherishing.',
+  },
+  {
+    id: 11,
+    date: '2025-04-10',
+    name: 'Peony',
+    image:
+      'https://images.unsplash.com/photo-1563730031910-60f14687e33a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    description: 'Peonies are known for their large, full blooms and lush foliage.',
+    symbolism: 'Symbolizes prosperity, good fortune, and compassion.',
+    message: 'Fortune favors those with open hearts.',
+  },
+  {
+    id: 12,
+    date: '2025-04-11',
+    name: 'Hydrangea',
+    image:
+      'https://images.unsplash.com/photo-1549100789-756142409c2e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    description: 'Hydrangeas produce large clusters of flowers in blue, pink, white, or purple.',
+    symbolism: 'Symbolizes gratitude, grace, and heartfelt emotions.',
+    message: 'Express gratitude for the abundance in your life.',
+  },
+  {
+    id: 13,
+    date: '2025-04-12',
+    name: 'Iris',
+    image:
+      'https://images.unsplash.com/photo-1590377663350-cfc38d4b6e43?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    description:
+      'Irises are distinctive with their unique three-part flowers and sword-like leaves.',
+    symbolism: 'Symbolizes faith, wisdom, hope, and valor.',
+    message: 'Wisdom comes to those who seek it with an open mind.',
+  },
+  {
+    id: 14,
+    date: '2025-04-13',
+    name: 'Carnation',
+    image:
+      'https://images.unsplash.com/photo-1582794543462-0d7922e50cf5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    description:
+      'Carnations have ruffled petals with a spicy-sweet fragrance and come in many colors.',
+    symbolism: 'Symbolizes love, fascination, and distinction.',
+    message: 'Love endures through all seasons.',
+  },
+  {
+    id: 15,
+    date: '2025-04-14',
+    name: 'Dahlia',
+    image:
+      'https://images.unsplash.com/photo-1620062317671-ef6441546d7d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    description:
+      'Dahlias are known for their geometric, perfectly symmetrical blooms in vibrant colors.',
+    symbolism: 'Symbolizes elegance, inner strength, and dignity.',
+    message: 'Find strength in your uniqueness.',
+  },
+  {
+    id: 16,
+    date: '2025-04-15',
+    name: 'Chrysanthemum',
+    image:
+      'https://images.unsplash.com/photo-1624373400586-b7f27ea22aad?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    description:
+      'Chrysanthemums feature daisy-like flowers with tightly clustered petals in various forms.',
+    symbolism: 'Symbolizes longevity, joy, and optimism.',
+    message: 'Find joy in the everyday moments.',
+  },
+  {
+    id: 17,
+    date: '2025-04-16',
+    name: 'Poppy',
+    image:
+      'https://images.unsplash.com/photo-1498814117408-e396f5507073?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    description: 'Poppies have delicate, paper-like petals in vibrant colors, especially red.',
+    symbolism: 'Symbolizes remembrance, peace, and consolation.',
+    message: 'Honor the past while embracing the future.',
+  },
+  {
+    id: 18,
+    date: '2025-04-17',
+    name: 'Marigold',
+    image:
+      'https://images.unsplash.com/photo-1606432144664-594a97fea6e2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    description: 'Marigolds have dense, ruffled flower heads in golden, orange, and yellow hues.',
+    symbolism: 'Symbolizes passion, creativity, and the warmth of the rising sun.',
+    message: 'Let your creativity shine brightly.',
+  },
+  {
+    id: 19,
+    date: '2025-04-18',
+    name: 'Bluebell',
+    image:
+      'https://images.unsplash.com/photo-1526038260759-e8de67460222?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    description:
+      'Bluebells are woodland flowers with delicate, bell-shaped blooms in blue or purple.',
+    symbolism: 'Symbolizes humility, gratitude, and everlasting love.',
+    message: 'Humility is the foundation of all virtues.',
+  },
+  {
+    id: 20,
+    date: '2025-04-19',
+    name: 'Forget-me-not',
+    image:
+      'https://images.unsplash.com/photo-1581956190574-c082e720b3fc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    description:
+      'Forget-me-nots are small flowers with five blue petals surrounding a yellow center.',
+    symbolism: 'Symbolizes remembrance, true love, and fidelity.',
+    message: 'True connections leave lasting impressions.',
+  },
+  {
+    id: 21,
+    date: '2025-04-20',
+    name: 'Snapdragon',
+    image:
+      'https://images.unsplash.com/photo-1690899200948-36dba0df9c87?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    description: "Snapdragons have unique flowers that resemble a dragon's mouth when squeezed.",
+    symbolism: 'Symbolizes grace, strength, and deception.',
+    message: 'Strength comes in many forms, including resilience.',
+  },
+  {
+    id: 22,
+    date: '2025-04-21',
+    name: 'Foxglove',
+    image:
+      'https://images.unsplash.com/photo-1529330748241-4095ac8a2fd0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    description: 'Foxgloves have tall spires of tubular flowers in pink, purple, white, or yellow.',
+    symbolism: 'Symbolizes insincerity but also creativity and productivity.',
+    message: 'Beauty can conceal complexity.',
+  },
+  {
+    id: 23,
+    date: '2025-04-22',
+    name: 'Lotus',
+    image:
+      'https://images.unsplash.com/photo-1616435577207-ca90abc6b732?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    description:
+      'Lotus flowers rise from the mud to bloom above water, with delicate petals unfolding.',
+    symbolism: 'Symbolizes purity, enlightenment, self-regeneration, and rebirth.',
+    message: 'From difficult circumstances, beauty can emerge.',
+  },
+  {
+    id: 24,
+    date: '2025-04-23',
+    name: 'Anemone',
+    image:
+      'https://images.unsplash.com/photo-1615671524971-4fac0891f7d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    description:
+      'Anemones have delicate, poppy-like blooms with a dark center and come in various colors.',
+    symbolism: 'Symbolizes anticipation, protection against evil, and fortune.',
+    message: 'Anticipation makes the heart grow fonder.',
+  },
+  {
+    id: 25,
+    date: '2025-04-24',
+    name: 'Camellia',
+    image:
+      'https://images.unsplash.com/photo-1519038635910-b3d93ae0d0ca?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    description:
+      'Camellias have glossy leaves and large, symmetrical blooms in red, pink, and white.',
+    symbolism: 'Symbolizes admiration, perfection, and gratitude.',
+    message: 'Perfect love needs no words.',
+  },
+  {
+    id: 26,
+    date: '2025-04-25',
+    name: 'Magnolia',
+    image:
+      'https://images.unsplash.com/photo-1617708407463-8460ff1fb4e2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    description:
+      'Magnolias have large, fragrant flowers with thick, waxy petals in white, pink, or purple.',
+    symbolism: 'Symbolizes nobility, perseverance, and dignity.',
+    message: 'Dignity comes from staying true to your nature.',
+  },
+  {
+    id: 27,
+    date: '2025-04-26',
+    name: 'Azalea',
+    image:
+      'https://images.unsplash.com/photo-1624282454118-7cfe8d23457e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    description: 'Azaleas produce masses of colorful funnel-shaped blooms, often in bright shades.',
+    symbolism: 'Symbolizes temperance, passion, and taking care of yourself.',
+    message: 'Self-care is not selfishness but self-preservation.',
+  },
+  {
+    id: 28,
+    date: '2025-04-27',
+    name: 'Pansy',
+    image:
+      'https://images.unsplash.com/photo-1588792405774-05bf3989a3b9?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    description: 'Pansies have heart-shaped, overlapping petals with distinctive "face" markings.',
+    symbolism: 'Symbolizes loving thoughts, remembrance, and free-thinking.',
+    message: 'Keep those you love in your thoughts.',
+  },
+  {
+    id: 29,
+    date: '2025-04-28',
+    name: 'Aster',
+    image:
+      'https://images.unsplash.com/photo-1572376369298-d8e09732438b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    description:
+      'Asters have daisy-like flowers with slender petals radiating from a central disk.',
+    symbolism: 'Symbolizes patience, daintiness, and elegance.',
+    message: 'Patience is not the ability to wait, but how you act while waiting.',
+  },
+  {
+    id: 30,
+    date: '2025-04-29',
+    name: 'Sweet Pea',
+    image:
+      'https://images.unsplash.com/photo-1626159092479-5b12772e2e9d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    description: 'Sweet peas have delicate, ruffled blooms with a wonderful fragrance.',
+    symbolism: 'Symbolizes blissful pleasure, departure, and gratitude.',
+    message: 'Find pleasure in simple joys.',
+  },
+  {
+    id: 31,
+    date: '2025-04-30',
+    name: 'Gladiolus',
+    image:
+      'https://images.unsplash.com/photo-1688842832393-62bb403df6a5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    description: 'Gladioli have tall spikes of funnel-shaped blooms in a wide range of colors.',
+    symbolism: 'Symbolizes strength of character, honor, and remembrance.',
+    message: 'Strength is not just physical but also of character and will.',
+  },
+  // Add more flowers as needed
+]
+// export const sampleFlowers = []
 
 export function generateFlowersForMonth(year, month) {
   // Month is 0-indexed (0 = January, 11 = December)

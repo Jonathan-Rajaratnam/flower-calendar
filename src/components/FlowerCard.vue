@@ -5,19 +5,11 @@
     :class="{ 'special-date': specialDate, 'has-flower': flowerImage }"
     :style="flowerImage ? { backgroundImage: `url(${flowerImage})` } : {}"
   >
-    <img
-      v-if="flowerImage"
-      :src="flowerImage"
-      @error="handleImageError"
-      style="display: none"
-      alt=""
-    />
-
     <div class="card-content">
-      <!-- Special date indicator at the top -->
+      <!-- Special date indicator at the top
       <div v-if="specialDate" class="special-date-indicator">
         <span :class="specialDate.type">{{ specialDate.label }}</span>
-      </div>
+      </div> -->
 
       <!-- Day number featured prominently in center -->
       <div class="day-number-center">
@@ -42,7 +34,6 @@
 
 <script>
 import '../assets/fonts.css'
-import '../assets/images/ixora.jpg'
 export default {
   name: 'FlowerCard',
   props: {
@@ -63,31 +54,7 @@ export default {
       default: null,
     },
   },
-  data() {
-    return {
-      imageLoadFailed: false,
-      fallbackImages: [' ../assets/images/ixora.jpg'],
-    }
-  },
-  computed: {
-    displayImage() {
-      if (!this.flowerImage || this.imageLoadFailed) {
-        // If no image provided or loading failed, use fallback
-        if (this.day && this.fallbackImages.length > 0) {
-          // Use day number to select different fallback images if you have multiple
-          const index = (this.day - 1) % this.fallbackImages.length
-          return this.fallbackImages[index]
-        }
-        return '' // No fallback available
-      }
-      return this.flowerImage
-    },
-  },
   methods: {
-    handleImageError() {
-      console.log(`Failed to load image: ${this.flowerImage}`)
-      this.imageLoadFailed = true
-    },
     showDetails() {
       this.$emit('flower-selected')
     },
