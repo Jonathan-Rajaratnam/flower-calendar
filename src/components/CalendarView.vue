@@ -17,9 +17,9 @@
 
         <div v-if="showDatePicker" class="date-picker-dropdown">
           <div class="year-selector">
-            <button @click="changeYear(-1)">←</button>
+            <button class="year-changer" @click="changeYear(-1)">←</button>
             <span>{{ currentYear }}</span>
-            <button @click="changeYear(1)">→</button>
+            <button class="year-changer" @click="changeYear(1)">→</button>
           </div>
 
           <div class="month-grid">
@@ -77,7 +77,7 @@
 <script>
 import FlowerCard from './FlowerCard.vue'
 import FlowerDetail from './FlowerDetail.vue'
-import { getFlowersForMonth } from '../flowerData.js'
+import { getFlowersForMonth, getSeasonalFlowersForMonth } from '../flowerAssignemnt.js'
 import '../assets/fonts.css'
 
 export default {
@@ -111,6 +111,7 @@ export default {
         { date: '2025-01-04', type: 'birthday', label: "Nimi's Bday" },
         { date: '2025-02-08', type: 'birthday', label: "Joe's Bday" },
       ],
+      useSeasonalFlowers: true,
 
       showDatePicker: false,
     }
@@ -129,7 +130,11 @@ export default {
       let firstDayOfMonth = new Date(this.currentYear, this.currentMonth, 1).getDay()
       firstDayOfMonth = firstDayOfMonth === 0 ? 6 : firstDayOfMonth - 1
 
-      const monthFlowers = getFlowersForMonth(this.currentYear, this.currentMonth)
+      const monthFlowers = this.useSeasonalFlowers
+        ? getSeasonalFlowersForMonth(this.currentYear, this.currentMonth)
+        : getFlowersForMonth(this.currentYear, this.currentMonth)
+
+      //const monthFlowers = getFlowersForMonth(this.currentYear, this.currentMonth)
 
       //Add empty slots for days from previous months
       for (let i = 0; i < firstDayOfMonth; i++) {
@@ -207,6 +212,10 @@ export default {
     },
     closeFlowerDetail() {
       this.selectedFlower = null
+    },
+    toggleAlgorithm() {
+      console.log('Using seasonal flowers:', this.useSeasonalFlowers)
+      this.generateCalendarDate()
     },
     handleKeyDown(e) {
       if (e.key === 'ArrowLeft') this.previousMonth()
@@ -336,6 +345,12 @@ h2 {
   background-color: #e6f2ff;
 }
 
+.year-changer {
+  font-size: 20px;
+  color: #fc94af;
+  font-family: 'Goodland Bold';
+}
+
 .calendar-day,
 .flower-card,
 .nav-button {
@@ -389,6 +404,8 @@ h2 {
   align-items: center;
   margin-bottom: 16px;
   color: #f29ec8;
+  font-family: 'Goodland Bold';
+  font-size: 1.5rem;
 }
 
 .year-selector button {
@@ -412,6 +429,8 @@ h2 {
   cursor: pointer;
   transition: all 0.2s ease;
   color: #f29ec8;
+  font-family: 'Goodland Bold';
+  font-size: 20px;
 }
 
 .month-option:hover {
@@ -427,6 +446,7 @@ h2 {
   .calendar-container {
     max-width: 100%;
     min-width: auto;
+    padding: 10px;
   }
   .calendar-title {
     font-size: 2.7rem;
@@ -460,12 +480,17 @@ h2 {
   }
 
   .calendar-controls button {
-    width: 40px;
+    width: 35px;
     padding: 5px;
-    height: 40px; /* Set explicit height */
+    height: 35px; /* Set explicit height */
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .year-changer {
+    font-size: 14px;
+    color: #fc94af;
   }
 
   .button-icon {
@@ -477,7 +502,8 @@ h2 {
   }
 
   h2 {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
+    margin-bottom: 10px;
   }
 }
 
