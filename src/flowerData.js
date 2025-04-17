@@ -2045,6 +2045,8 @@ export function generateFlowersForMonth(year, month) {
   const monthStr = (month + 1).toString().padStart(2, '0')
   const yearStr = year.toString()
   const generatedFlowers = []
+  console.log('flowerLibrary length:', flowerLibrary.length)
+  console.log('flowerLibrary sample:', flowerLibrary?.[0])
 
   // Check if there are already manually assigned flowers for this month
   const existingFlowers = sampleFlowers.filter((flower) => {
@@ -2057,13 +2059,13 @@ export function generateFlowersForMonth(year, month) {
     return existingFlowers
   }
 
-  // Calculate how many days have passed in the year
-  const dayOfYear = (day) => {
-    const startOfYear = new Date(year, 0, 0)
-    const currentDay = new Date(year, month, day)
-    const diff = (currentDay - startOfYear) / (1000 * 60 * 60 * 24)
-    return diff
-  }
+  // // Calculate how many days have passed in the year
+  // const dayOfYear = (day) => {
+  //   const startOfYear = new Date(year, 0, 0)
+  //   const currentDay = new Date(year, month, day)
+  //   const diff = Math.floor((currentDay - startOfYear) / 86400000)
+  //   return diff
+  // }
 
   // Otherwise, assign flowers from library to each day of the month
   for (let day = 1; day <= daysInMonth; day++) {
@@ -2071,7 +2073,7 @@ export function generateFlowersForMonth(year, month) {
 
     // Use day-of-year to pick a flower, ensuring each day of the year gets a unique flower
     // We use modulo to cycle through the flower library if we have more days than flowers
-    const dayNumber = dayOfYear(day)
+    const dayNumber = getDayOfYear(year, month, day)
     const flowerIndex = (dayNumber - 1) % flowerLibrary.length
     const flowerTemplate = flowerLibrary[flowerIndex]
 
@@ -2116,6 +2118,12 @@ export function getFlowersForMonth(year, month) {
 
   // Otherwise, generate flowers for this month
   return generateFlowersForMonth(year, month)
+}
+
+function getDayOfYear(year, month, day) {
+  const date = new Date(Date.UTC(year, month, day))
+  const start = new Date(Date.UTC(year, 0, 0))
+  return Math.floor((date - start) / 86400000)
 }
 
 // // Function to get a flower by date
